@@ -1,7 +1,7 @@
 process.env.NODE_ENV = 'test'
 const chai = require('chai')
 const chaiHttp = require('chai-http')
-const app = require('../index')
+const app = require('./src/index.js')
 const expect = chai.expect
 chai.use(chaiHttp)
 
