@@ -46,14 +46,14 @@ if (process.env.NODE_ENV === 'prod' || process.env.NODE_ENV === 'stage') {
 } else if (process.env.NODE_ENV === 'test') {
   mongoConn = 'mongodb://' + (process.env.MONGO_HOST || 'localhost') + ':' +
   (process.env.MONGO_PORT || parseFloat('27017')) + '/' +
-  (process.env.MONGO_DATABASE || 'jhakaas_test')
+  (process.env.MONGO_DATABASE || 'test')
   mongoOpt = {
     useNewUrlParser: true
   }
 } else {
   mongoConn = 'mongodb://' + (process.env.MONGO_HOST || 'localhost') + ':' +
         (process.env.MONGO_PORT || parseFloat('27017')) + '/' +
-        (process.env.MONGO_DATABASE || 'jhakaas_dev')
+        (process.env.MONGO_DATABASE || 'dev')
   mongoOpt = {
     useNewUrlParser: true
   }
